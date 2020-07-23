@@ -18,7 +18,7 @@ export default class App extends Component {
 //2.  how can i get weather by my current location?
   callWeather = async() =>{
     let url = `https://api.openweathermap.org/data/2.5/weather?q=cape town&appid=${apikey}&units=metric`
-    console.log("url",url)
+    //console.log("url",url)
     let data = await fetch(url)
     let result = await data.json()
     console.log("result?",result)
